@@ -1,5 +1,5 @@
 import { StoryFn, Meta } from '@storybook/vue3';
-import Button from './Button.vue';
+import Button from './VButton.vue';
 
 export default {
     title: 'Button',
@@ -22,7 +22,7 @@ export default {
     },
 } as Meta<typeof Button>;
 
-const Template: StoryFn<typeof Button> = (args) => ({
+const Template: StoryFn<typeof Button> = args => ({
     components: { Button },
     setup() {
         return { args };
@@ -36,7 +36,7 @@ const Template: StoryFn<typeof Button> = (args) => ({
   `,
 });
 
-export const DefaultButton: StoryFn<typeof Button> = (args) => ({
+export const DefaultButton: StoryFn<typeof Button> = args => ({
     components: { Button },
     setup() {
         return { args };

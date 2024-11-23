@@ -1,5 +1,5 @@
-import Button from './button/Button.vue';
+import VButton from './buttons/button/VButton.vue';
 
 export {
-    Button,
+    VButton,
 };
